@@ -3,9 +3,7 @@ import time
 def clear():
   os.system("clear")
 global SayVar
-Name = "Jeff"
 line = 0
-var = "Helo + Name"
 item1 = ""
 item = 0
 var4 = ""
@@ -27,7 +25,7 @@ with open("./main.Cb", "r") as file:
       except:
         print(f"\nError in line {line}:")
         print(f"The variable requested does not exist please check your spelling")
-        continue
+      continue
     if "Clear" in x:
       clear()
       continue
@@ -37,26 +35,26 @@ with open("./main.Cb", "r") as file:
       continue
     if "SayTextandVar" in x:
       import os
-def clear():
-  os.system("clear")
-item = 0
-var4 = ""
-var = x
-item1 = ""
-for x in var:
-  var1 = var[item]
-  if var1 == "+":
-    var3 = var1.replace("SayTextandVar: ", "")
-    print(var3)
-    break
-  else:
-    item1 = item1 + var1
-  item += 1
-clear()
-item1 = item1.replace("SayTextandVar: ", "")
-var = var.replace("SayTextandVar: ", "")
-var = var.replace(item1, "")
-var = var.replace("+", "")
-var = var.replace(" ", "")
-var = var.replace(" ", "")
-exec(f"print(item1, {var})")
+  def clear():
+    os.system("clear")
+  item = 0
+  var4 = ""
+  var = x
+  item1 = ""
+  for x in var:
+    var1 = var[item]
+    if var1 == "+":
+      var3 = var1.replace("SayTextandVar: ", "")
+      print(var3)
+      break
+    else:
+      item1 = item1 + var1
+    item += 1
+  clear()
+  item1 = item1.replace("SayTextandVar: ", "")
+  var = var.replace("SayTextandVar: ", "")
+  var = var.replace(item1, "")
+  var = var.replace("+", "")
+  var = var.replace(" ", "")
+  var = var.replace(" ", "")
+  exec(f"print(item1, {var})")
