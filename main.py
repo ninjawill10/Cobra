@@ -19,4 +19,4 @@ with open("./main.Cb", "r") as file:
         print(f"The variable requested does not exist please check your spelling")
       continue
     if "Word+Var: " in x:
-      print("hi")
+      print("jeff")
