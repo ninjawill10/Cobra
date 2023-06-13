@@ -7,3 +7,6 @@ This is basically the print function in Python. To use this follow this example.
 
 ### InputVar
 This saves the user input to the name you choose use this format. InputVar: Input
+
+### Var
+This basically prints a variable for example. Var: Input
